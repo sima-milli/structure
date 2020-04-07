@@ -18,7 +18,7 @@ class LinkedList {
     this.firstWagon = undefined;
   }
 
-  add(people) {
+  add(people) { // add people to the first wagon
     const wagon = new Node(people);
     if (this.firstWagon === undefined) {
       this.firstWagon = wagon;
