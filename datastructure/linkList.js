@@ -28,7 +28,7 @@ class LinkedList {
     }
   }
 
-  isEmpty() {
+  isEmpty() {  // check if the list is empty
     return this.firstWagon === undefined;
   }
 

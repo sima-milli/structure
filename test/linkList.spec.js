@@ -6,7 +6,7 @@ describe("linkList", () => {
     const linkList = new Train();
     expect(linkList.isEmpty()).to.equal(true);
   });
-
+ 
   it("should add to list", () => {
     const linkList = new Train();
     linkList.add(9);

@@ -1,14 +1,17 @@
 {
-  "name": "structure",
+  "name": "@sima-milli/structure",
   "version": "1.0.0",
-  "description": "",
+  "description": "manipulate linkList",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha",
     "lint": "eslint --ext .js . ",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "coverage": "nyc npm run test",
+    "cover:report": "nyc report --reporter=lcov --reporter=text"
   },
-  "author": "",
+  "author": "@sima-milli",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
@@ -19,8 +22,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "mocha": "^7.1.1",
+    "nyc": "^15.0.1",
     "prettier": "2.0.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
