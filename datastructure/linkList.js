@@ -18,7 +18,8 @@ class LinkedList {
     this.firstWagon = undefined;
   }
 
-  add(people) { // add people to the first wagon
+  add(people) {
+    // add people to the first wagon
     const wagon = new Node(people);
     if (this.firstWagon === undefined) {
       this.firstWagon = wagon;
@@ -28,7 +29,8 @@ class LinkedList {
     }
   }
 
-  isEmpty() {  // check if the list is empty
+  isEmpty() {
+    // check if the list is empty
     return this.firstWagon === undefined;
   }
 
@@ -42,6 +44,7 @@ class LinkedList {
   }
 
   remove(index) {
+    // remove wagon by index
     // --c--|--b--|--a--|--34-|--9--
     let wagon = this.searchIndex(index);
     if (this.isEmpty()) {
@@ -62,6 +65,7 @@ class LinkedList {
   }
 
   search(predicate) {
+    // search for wagon and return it
     // predicate is a functions that returns true or false
     let wagon = this.firstWagon;
     while (wagon) {
@@ -74,6 +78,7 @@ class LinkedList {
   }
 
   searchIndex(index) {
+    // search wagon by given index
     let counter = 0;
     let wagon = this.firstWagon;
     while (wagon) {
@@ -87,6 +92,7 @@ class LinkedList {
   }
 
   foreach(action) {
+    // run a loop over each wagon
     // action is a function that doesn't return any value
     let wagon = this.firstWagon;
     while (wagon) {
@@ -96,6 +102,7 @@ class LinkedList {
   }
 
   map(func) {
+    // run a loop over each wagon and return new list
     // function is a function that returns a value
     const result = new LinkedList();
     this.foreach((item) => {
@@ -105,6 +112,7 @@ class LinkedList {
   }
 
   toArray() {
+    // convert linkedlist to array
     const arr = [];
     this.foreach((item) => {
       arr.push(item);
@@ -112,8 +120,5 @@ class LinkedList {
     return arr;
   }
 }
-
-// remove
-// search
 
 module.exports = LinkedList;

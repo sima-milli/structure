@@ -1,4 +1,4 @@
-const Stack = require('./datastructure/stack');
+const Stack = require("./datastructure/stack");
 
 const LinkedList = require("./datastructure/linkList");
 
@@ -8,14 +8,17 @@ const LinkedList = require("./datastructure/linkList");
 // structure.add(34);
 // structure.add("a");
 // structure.add("b");
-// structure.add("c");
-// structure.remove(2);
+// structure.add("d");
+// structure.add(1);
+// structure.remove(0);
+// structure.searchIndex(0);
 // const newArr = structure.toArray();
 // const newList = structure.map((item) => {
 //   return {
 //     data: item,
 //   };
 // });
+// structure.pop();
 // const result = structure.search((data) => data === "d");
 // structure.foreach((item) => {
 //   console.log("this is the item:", item);
