@@ -1,6 +1,6 @@
 # structure
 
-Small single [linked list](https://en.wikipedia.org/wiki/Linked_list "linked list.")
+Small single [linked list.](https://en.wikipedia.org/wiki/Linked_list "linked list (Wikipedia)")
 ## Installation
 
 ```sh
