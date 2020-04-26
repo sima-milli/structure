@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/sima-milli/structure/badge.svg?branch=master)](https://coveralls.io/github/sima-milli/structure?branch=master)
+
 # structure
 
 Small single [linked list.](https://en.wikipedia.org/wiki/Linked_list "linked list (Wikipedia)")
