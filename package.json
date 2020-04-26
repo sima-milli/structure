@@ -9,7 +9,8 @@
     "lint": "eslint --ext .js . ",
     "format": "prettier --write .",
     "coverage": "nyc npm run test",
-    "cover:report": "nyc report --reporter=lcov --reporter=text"
+    "cover:report": "nyc report --reporter=lcov --reporter=text",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
   },
   "author": "simamilli",
   "license": "ISC",
@@ -23,12 +24,14 @@
   ],
   "devDependencies": {
     "chai": "4.2.0",
+    "coveralls": "^3.1.0",
     "eslint": "6.8.0",
     "eslint-config-standard": "14.1.1",
     "eslint-plugin-import": "2.20.2",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-standard": "4.0.1",
+    "istanbul": "^0.4.5",
     "mocha": "7.1.1",
     "nyc": "15.0.1",
     "prettier": "2.0.2"
