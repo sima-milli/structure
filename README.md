@@ -1,4 +1,4 @@
-https://img.shields.io/travis/sima-milli/structure [![Coverage Status](https://coveralls.io/repos/github/sima-milli/structure/badge.svg?branch=master)](https://coveralls.io/github/sima-milli/structure?branch=master)
+![Travis (.org)](https://img.shields.io/travis/sima-milli/structure) [![Coverage Status](https://coveralls.io/repos/github/sima-milli/structure/badge.svg?branch=master)](https://coveralls.io/github/sima-milli/structure?branch=master)
 
 # structure
 
