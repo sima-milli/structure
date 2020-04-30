@@ -1,6 +1,6 @@
 {
   "name": "@simamilli/structure",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "manipulate linkList",
   "main": "index.js",
   "scripts": {
