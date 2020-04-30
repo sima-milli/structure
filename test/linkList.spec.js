@@ -60,6 +60,6 @@ describe("linkList", () => {
     linkList.add(1);
     linkList.add(2);
     const newArr = linkList.toArray();
-    expect(newArr).to.be.an('array');
-  })
+    expect(newArr).to.be.an("array");
+  });
 });
