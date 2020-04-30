@@ -5,14 +5,14 @@ Small single [linked list.](https://en.wikipedia.org/wiki/Linked_list "linked li
 ## Installation
 
 ```sh
-npm install structure
-yarn add structure
+npm install @simamilli/structure
+yarn add @simamilli/structure
 ```
 
 ## Usage
 
 ```javascript
-const {LinkedList} = require(“structure”);
+const {LinkedList} = require(“@simamilli/structure”);
 const structure = new LinkedList(5);
 
 // add

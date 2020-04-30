@@ -54,4 +54,12 @@ describe("linkList", () => {
     });
     expect(newList.firstWagon.people.data).to.equal(1);
   });
+
+  it("should turn linkedlist to array", () => {
+    const linkList = new Train();
+    linkList.add(1);
+    linkList.add(2);
+    const newArr = linkList.toArray();
+    expect(newArr).to.be.an('array');
+  })
 });
