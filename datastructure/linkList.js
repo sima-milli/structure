@@ -18,8 +18,13 @@ class LinkedList {
     this.firstWagon = undefined;
   }
 
+  /**
+  * Add people to the first wagon.
+  *
+  * @param {any}  - data to add to wagon
+  * 
+  */
   add(people) {
-    // add people to the first wagon
     const wagon = new Node(people);
     if (this.firstWagon === undefined) {
       this.firstWagon = wagon;
@@ -28,12 +33,21 @@ class LinkedList {
       this.firstWagon = wagon;
     }
   }
-
+  /**
+  *  Check if the list is empty.
+  *
+  * @return {boolean}
+  *
+  */
   isEmpty() {
-    // check if the list is empty
     return this.firstWagon === undefined;
   }
-
+  /**
+  * Pop out the first wagon.
+  *
+  * @return {any}  first wagon
+  *
+  */
   pop() {
     if (this.isEmpty()) {
       throw "Empty list";
@@ -42,10 +56,13 @@ class LinkedList {
     this.firstWagon = this.firstWagon.link;
     return wagon;
   }
-
+  /**
+  * Remove wagon by index.
+  *
+  * @param {number}  - index of wagon to remove
+  *
+  */
   remove(index) {
-    // remove wagon by index
-    // --c--|--b--|--a--|--34-|--9--
     let wagon = this.searchIndex(index);
     if (this.isEmpty()) {
       throw "Empty list";
@@ -63,9 +80,14 @@ class LinkedList {
 
     wagon.link = undefined;
   }
-
+  /**
+  * Search for wagon.
+  *
+  * @param {predicate}  - index of wagon to remove
+  *
+  * @return {any}  wagon found or undefined
+  */
   search(predicate) {
-    // search for wagon and return it
     // predicate is a functions that returns true or false
     let wagon = this.firstWagon;
     while (wagon) {
@@ -76,9 +98,14 @@ class LinkedList {
     }
     return undefined;
   }
-
+  /**
+  * Search wagon by given index.
+  *
+  * @param {number}  - index
+  *
+  * @return {any}  wagon found or undefined
+  */
   searchIndex(index) {
-    // search wagon by given index
     let counter = 0;
     let wagon = this.firstWagon;
     while (wagon) {
@@ -90,9 +117,13 @@ class LinkedList {
     }
     return undefined;
   }
-
+  /**
+  * Run a loop over each wagon.
+  *
+  * @param {action}  - action to be done
+  *
+  */
   foreach(action) {
-    // run a loop over each wagon
     // action is a function that doesn't return any value
     let wagon = this.firstWagon;
     while (wagon) {
@@ -100,9 +131,14 @@ class LinkedList {
       wagon = wagon.link;
     }
   }
-
+  /**
+  * Run a loop over each wagon and return new list.
+  *
+  * @param {function}  - function to be done
+  *
+  * @return {LinkedList}  new linkedlist
+  */
   map(func) {
-    // run a loop over each wagon and return new list
     // function is a function that returns a value
     const result = new LinkedList();
     this.foreach((item) => {
@@ -110,9 +146,12 @@ class LinkedList {
     });
     return result;
   }
-
+  /**
+  * Convert linkedlist to array.
+  *
+  * @return {Array}
+  */
   toArray() {
-    // convert linkedlist to array
     const arr = [];
     this.foreach((item) => {
       arr.push(item);
